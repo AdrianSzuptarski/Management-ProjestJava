@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0"
+      prefWidth="550.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="javafxapplication1.PracownikController">
+    <children>
+        <Button layoutX="264.0" layoutY="436.0" mnemonicParsing="false" onAction="#wyjsc" text="Wyloguj"/>
+        <Label layoutX="236.0" layoutY="27.0" text="Panel Pracownika"/>
+        <Label layoutX="103.0" layoutY="67.0" text="Nazwa projektu:"/>
+        <Label layoutX="142.0" layoutY="89.0" text="Zadanie:"/>
+        <Label layoutX="71.0" layoutY="347.0" text="Postęp zadania:"/>
+        <Button layoutX="232.0" layoutY="388.0" mnemonicParsing="false" onAction="#editTask" text="Aktualizuj"/>
+        <Label layoutX="124.0" layoutY="212.0" text="Opis projektu:"/>
+        <TextArea fx:id="projectDescriptionArea" disable="true" editable="false" layoutX="209.0" layoutY="206.0"
+                  prefHeight="81.0" prefWidth="177.0">
+            <font>
+                <Font size="13.0"/>
+            </font>
+        </TextArea>
+        <ComboBox fx:id="tasksComboBox" layoutX="208.0" layoutY="85.0" prefHeight="25.0" prefWidth="177.0"/>
+        <Label layoutX="100.0" layoutY="175.0" text="Priorytet zadania:"/>
+        <ComboBox fx:id="taskPriorityComboBox" disable="true" layoutX="209.0" layoutY="171.0" prefHeight="25.0"
+                  prefWidth="177.0" visibleRowCount="12"/>
+        <ComboBox fx:id="taskStatusComboBox" disable="true" layoutX="209.0" layoutY="304.0" prefHeight="25.0"
+                  prefWidth="177.0"/>
+        <Label layoutX="71.0" layoutY="308.0" text="Aktualny status zadania:"/>
+        <Label fx:id="projectNameLabel" layoutX="206.0" layoutY="67.0" prefHeight="16.0" prefWidth="177.0"/>
+        <Slider fx:id="taskProgressSlider" layoutX="208.0" layoutY="348.0" max="100" min="0" prefHeight="13.0"
+                prefWidth="177.0" showTickLabels="true" showTickMarks="true"/>
+        <Label fx:id="taskProgressLabel" layoutX="158.0" layoutY="347.0"/>
+        <Label layoutX="141.0" layoutY="118.0" text="Notatka:"/>
+        <TextArea fx:id="noteTextArea" layoutX="209.0" layoutY="120.0" prefHeight="46.0" prefWidth="177.0"/>
+    </children>
+</Pane>
